@@ -1,0 +1,3 @@
+#!/bin/sh
+PATH=$PATH:~/bro/bin
+sudo `which bro` -C -i wlan0 $*
