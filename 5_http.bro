@@ -11,5 +11,8 @@ event HTTP::log_http(rec: HTTP::Info)
 event bro_done()
 {
     print "";
-    print fmt("%d user-agents were seen", |uas|);
+    print fmt("%d user-agents were seen:", |uas|);
+    for(agent in uas){
+        print agent;
+    }
 }

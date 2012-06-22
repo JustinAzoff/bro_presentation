@@ -15,6 +15,7 @@ event connection_established(c: connection)
 
 event bro_done()
 {
+    print "";
     print fmt("There were %d connections", connections);
     print fmt("There were %d unique sites", |sites|);
     for(site in sites){
