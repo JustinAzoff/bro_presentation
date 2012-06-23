@@ -1,0 +1,2 @@
+#!/bin/sh
+bro-cut  host unparsed_version < software.log
